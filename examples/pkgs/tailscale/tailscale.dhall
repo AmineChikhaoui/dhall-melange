@@ -20,6 +20,7 @@ let package =
       , copyright =
           -- FIXME: figure out attestation ??
           [ { paths = [ "*" ], attestation = "", license = "BSD-3-Clause" } ]
+      , dependencies.runtime = Some [ "iptables" ]
       }
 
 in  MelangeConfig::{
