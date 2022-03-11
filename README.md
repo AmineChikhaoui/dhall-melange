@@ -15,11 +15,15 @@ GNU hello package recipe which is the equivalent of `melange`'s
 -- ./examples/gnu-hello.dhall
 let fetchUrl = ../Pipelines/fetch.dhall
 
-let Package = ../Melange/Package/schema.dhall
+let Melange = ./../Melange/package.dhall
 
-let ApkoConfig = ../Apko/Config/schema.dhall
+let Apko = ./../Apko/package.dhall
 
-let MelangeConfig = ../Melange/Config/schema.dhall
+let Package = Melange.Package
+
+let ApkoConfig = Apko.Config
+
+let MelangeConfig = Melange.Config
 
 let package =
       Package::{
@@ -68,7 +72,6 @@ in  MelangeConfig::{
           ]
         # ../Pipelines/default-build.dhall package.name
     }
-
 ```
 
 The resulting yaml file generated through `dhall-to-yaml` is pretty much the
