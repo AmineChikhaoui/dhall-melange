@@ -1,4 +1,4 @@
-# dhall-melange
+# dhall-melange [EXPERIMENTAL]
 
 `dhall-melange` contains [dhall-lang](https://github.com/dhall-lang/dhall-lang)
 bindings to [melange](https://github.com/chainguard-dev/melange) (the new tool
