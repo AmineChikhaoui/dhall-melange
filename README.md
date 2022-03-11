@@ -1,8 +1,9 @@
 # dhall-melange
 
 `dhall-melange` contains [dhall-lang](https://github.com/dhall-lang/dhall-lang)
-bindings to [melange](https://github.com/chainguard-dev/melange), so you can
-generate `melange` recipes from Dhall expressions.
+bindings to [melange](https://github.com/chainguard-dev/melange) (the new tool
+for creating [APK](https://git.alpinelinux.org/apk-tools/about/) packages), so
+you can generate `melange` recipes from Dhall expressions.
 This will let you easily typecheck, template and modularize your Melange recipes.
 
 ## Example
