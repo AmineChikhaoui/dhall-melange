@@ -1,10 +1,14 @@
 let fetchUrl = ../Pipelines/fetch.dhall
 
-let Package = ../Melange/Package/schema.dhall
+let Melange = ./../Melange/package.dhall
 
-let ApkoConfig = ../Apko/Config/schema.dhall
+let Apko = ./../Apko/package.dhall
 
-let MelangeConfig = ../Melange/Config/schema.dhall
+let Package = Melange.Package
+
+let ApkoConfig = Apko.Config
+
+let MelangeConfig = Melange.Config
 
 let package =
       Package::{
