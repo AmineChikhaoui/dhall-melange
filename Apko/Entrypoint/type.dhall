@@ -1,4 +1,4 @@
-{ Type : Text
-, Command : Text
-, Services : List { mapKey : Text, mapValue : Text }
+{ type : Text
+, command : Text
+, services : List { mapKey : Text, mapValue : Text }
 }

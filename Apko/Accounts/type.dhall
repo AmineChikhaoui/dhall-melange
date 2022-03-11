@@ -1,5 +1,5 @@
-let User = { UserName : Text, UID : Text, GID : Text }
+let User = { username : Text, uid : Text, gid : Text }
 
-let Group = { GroupName : Text, GID : Text, Members : List Text }
+let Group = { groupname : Text, gid : Text, members : List Text }
 
-in  { RunAs : Text, Users : List User, Groups : List Group }
+in  { run-as : Text, users : List User, groups : List Group }
